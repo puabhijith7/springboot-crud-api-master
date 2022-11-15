@@ -1,0 +1,20 @@
+server.port: 5000
+  
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: 12345678
+    url: jdbc:mysql://springboot2.c1y2sfmd5wep.ap-south-1.rds.amazonaws.com:3306/springboot2?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
